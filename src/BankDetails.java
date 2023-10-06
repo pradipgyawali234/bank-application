@@ -125,8 +125,6 @@ public class BankDetails {
                 if (balance >= amt) {
                     balance = balance - amt;
                     System.out.println("After withdrawal, you have: " + balance + "on your account");
-
-
                     String sql = "UPDATE table1 SET balance = ? WHERE acc_no = " + accountNumber;
                     PreparedStatement statement = connection.prepareStatement(sql);
 
